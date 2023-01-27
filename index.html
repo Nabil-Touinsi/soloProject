@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+
+    <title>shake shack tunisie</title>
+</head>
+
+<body>
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav__logo">shake shack tunisie</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">products</a></li>
+                    <li class="nav__item"><a href="#menu" class="nav__link">Menu</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact us</a></li>
+
+                </ul>
+                <input type="text" placeholder="meal1 or sandwich1 or sandwich2" class="search">
+                <button id="search_btn"> search</button>
+            </div>
+
+
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <section class="home" id="home">
+            <div class="home__container bd-container bd-grid" id="1">
+                <div class="home__data">
+                    <h1 class="home__title">Fresh Lablebi H24</h1>
+                    <p class="home__subtitle">The benefits of boiled chickpeas for the body is an inestimable treasure.
+                        Chickpeas are a source of many useful nutrients, as it is a rich source of fiber, carbohydrates,
+                        proteins, vitamin B group, some minerals, and others. <br> the week.</p>
+                    <a href="#" class="button">View Menu</a>
+                </div>
+
+                <img src="assets/img/lablaabi.png" alt="" class="home__img">
+            </div>
+        </section>
+
+        <section class="about section bd-container" id="about">
+            <div class="about__container  bd-grid">
+                <div class="about__data">
+                    <span class="section-subtitle about__initial">About us</span>
+                    <p class="about__description">Make sure you are hungry before ordering a “lablabi”. This hearty
+                        dish, very popular in Tunisia, consists of a chickpea soup seasoned with olive oil, salt,
+                        pepper, and lots of cumin. Tasting a “lablabi” is a small ritual: you start by crumble stale
+                        bread in your terracotta bowl. The cook then pours the chickpea soup and adds a soft-boiled egg,
+                        harissa, lemon juice and a ladle of olive oil. Then it's up to you to mix all the ingredients.
+                        As an option, you can add tuna and even calf's feet (hargma). This traditional dish is best
+                        eaten when it is cold. </p>
+                    <a href="#" class="button">learn more</a>
+                </div>
+
+                <img src="assets/img/aboutimg.jpg" alt="" class="about__img">
+            </div>
+        </section>
+
+        <section class="services section bd-container" id="services">
+            <span class="section-subtitle">Services</span>
+            <h2 class="section-title">Our amazing services</h2>
+
+            <div class="services__container  bd-grid">
+                <div class="services__content">
+                    <img src="assets/img/exelentfood.png" alt="" class="services__img">
+
+                    <h3 class="services__title">Excellent food</h3>
+                    <p class="services__description">We offer our clients excellent quality services for many years,
+                        with the best and delicious food in the city.</p>
+                </div>
+
+                <div class="services__content">
+                    <img src="assets/img/fastfood.png" alt="" class="services__img">
+
+                    <h3 class="services__title">Fast food</h3>
+                    <p class="services__description">We offer our clients excellent quality services for many years,
+                        with the best and delicious food in the city.</p>
+                </div>
+
+                <div class="services__content">
+                    <img src="assets/img/fast.png" alt="" class="services__img">
+
+                    <h3 class="services__title">Delivery</h3>
+                    <p class="services__description">We offer our clients excellent quality services for many years,
+                        with the best and delicious food in the city.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu section bd-container" id="menu">
+            <span class="section-subtitle">Our Menu</span>
+            <h2 class="section-title">Menu of the week</h2>
+
+            <div class="menu__container bd-grid products">
+                <div class="menu__content ">
+                    <img src="assets/img/kakrout kafteji.jpeg" alt="" class="menu__img">
+                    <h3 class="menu__name" id="sandwich1">Tasty And Healty Kafteji</h3>
+                    <span class="menu__preci">5.5Dt</span>
+
+                    <button class="button menu__button " onclick="openPopup()">Add to cart</button>
+                </div>
+
+                <div class="menu__content ">
+                    <img src="assets/img/shan kafteji .jpeg" alt="" class="menu__img">
+                    <h3 class="menu__name" id="meal1">Tasty And Healty Kafteji Meal</h3>
+                    <span class="menu__preci">8Dt </span>
+
+                    <button class="button menu__button " onclick="openPopup()">Add to cart</button>
+                </div>
+
+                <div class="menu__content ">
+                    <img src="assets/img/kaskrout thon.jpg" alt="" class="menu__img">
+                    <h3 class="menu__name" id="sandwich2">Tasty And Healty Thon Sandwich</h3>
+                    <span class="menu__preci">4.8Dt </span>
+
+                    <button class="button menu__button " onclick="openPopup()">Add to cart</button>
+                </div>
+                <div class="popup " id="popup">
+                    <img src="assets/img/check.png" alt="check">
+                    <h2>Thank You For Placing Your Order !</h2>
+                    <p>your order has been added to your Cart </p>
+                    <button class="button" onclick="closePopup()">OK</button>
+                </div>
+
+            </div>
+
+        </section>
+        <section class="contact section bd-container" id="contact">
+            <div class="contact__container bd-grid">
+                <div class="contact__data">
+                    <h2 class="section-title contact__initial">Contact us</h2>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51110.833627050066!2d10.128588771586276!3d36.80828413251864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd35a8519ce9af%3A0xd727c7b183501020!2sKafteji%20March%C3%A9%20Central!5e0!3m2!1sfr!2stn!4v1674762707485!5m2!1sfr!2stn"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <p class="contact__description">If you want to reserve a table in our restaurant, contact us and we
+                        17 Rue d'Allemagne, Tunis </br>
+                        +216 51 226 325
+
+                </div>
+                </p>
+                </p>
+            </div>
+
+            <div class="contact__button">
+                <a href="#" class="button">Contact us now</a>
+            </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer section bd-container">
+        <div class="footer__container bd-grid">
+            <div class="footer__content">
+                <a href="#" class="footer__logo">shake shack tunisie</a>
+                <span class="footer__description">Restaurant</span>
+                <div>
+                    <a href="https://www.facebook.com/" class="footer__social">Facebook</i></a>
+                    <a href="https://www.instagram.com/" class="footer__social">instagram</i></a>
+                    <a href="https://twitter.com/" class="footer__social">twitter</a>
+                </div>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">Informations</h3>
+                <ul>
+                    <li><a href="#" class="footer__link">Contact us</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">Adresse</h3>
+                <ul>
+                    <li> 17 Rue d'Allemagne, Tunis</li>
+                    <li>+216 51 226 325</li>
+                    <li>kaftaji@email.com</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
